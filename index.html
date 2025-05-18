@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Or Loss</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-900 m-0 p-0   text-white h-100">
+
+
+    <!-- head and message i wnat best ui -->
+    <div class="flex flex-col items-center justify-center h-100 mt-1.5">
+            <h1 class="text-4xl font-bold mb-1">Guess Or Loss</h1>
+            <p class="text-lg   ">Can you guess the number?</p>
+            <p class="text-lg mb-8">between 1 and 100</p>
+            <p class="text-lg mb-8 text-red-600" id="lowOrHi"></p>
+
+
+
+        <form id="game" class="flex flex-col items-center">
+                <input type="number" id="inputNumber" placeholder="Enter your guess"
+                    class="mb-4 p-2 border border-gray-300 rounded">
+                <input type="submit" id="submit" class="bg-blue-500 text-white px-4 py-2 rounded"> </input>
+                <p id="message" class="mt-4"></p>
+        </form>
+            <div id="">
+                    <p>Previous guesses:
+                        <span id="guessCount" class="text-amber-400">0</span>
+                    <p>Remaining guesses:
+                        <span id="guessLimit" class="text-amber-400">10</span>
+                    </p>
+                    <p id="start" class="text-green-500 flex justify-center "></p>
+            </div>
+    </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
